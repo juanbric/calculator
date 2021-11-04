@@ -6,7 +6,7 @@ class Calculator {
     }
 
     clear() {
-        this.currenOeprand = '';
+        this.currentOeprand = '';
         this.previousOperand = '';
         this.operation = undefined;
     }
@@ -16,7 +16,7 @@ class Calculator {
     }
 
     appendNumber(number) {
-
+        this.currentOperand = number;
     }
 
     chooseOperation(operation) {
@@ -28,7 +28,7 @@ class Calculator {
     }
 
     updateDisplay() {
-
+        this.currentOeprandTextElement.innerText = this.currentOeprand;
     }
 }
 
